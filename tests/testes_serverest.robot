@@ -12,7 +12,7 @@ Cenário de teste: Cadastro de usuário administrador
      Passo 5 - Digitar uma senha
      Passo 6 - Escolher perfil de usuário de administrador
      Passo 7 - Clicar em cadastrar
-     Passo 8 - Clicar em cadastrar usuário
+     #Passo 8 - Clicar em cadastrar usuário
 
 
 

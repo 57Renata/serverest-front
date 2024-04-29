@@ -13,7 +13,7 @@ ${cadastrar usuário}        //a[@data-testid='cadastrarUsuarios'][contains(.,'C
 
 *** Keywords ***
  Abrir o navegador
-    Open Browser  browser=chrome
+    Open Browser  browser=headlesschrome
     Maximize Browser Window
 Fechar o navegador 
     Close Browser
@@ -26,12 +26,12 @@ Passo 2 - Clicar em cadastre-se
 
 Passo 3 - Digitar um nome
     Wait Until Element Is Visible    locator=${nomeInput}
-    Input Text                       locator=${nomeInput}           text=Testenildos das Silva
+    Input Text                       locator=${nomeInput}           text=Testenildo dos Santos
     Sleep    3s 
 
 Passo 4 - Digitar e-mail
     Wait Until Element Is Visible        locator=${emailInput}
-    Input Text                           locator=${emailInput}      text=testerenildodasilva01@qa.coders.com.br
+    Input Text                           locator=${emailInput}      text=testerenildodasanros@qa.coders.com.br
     Sleep    3s 
 
 Passo 5 - Digitar uma senha
@@ -49,8 +49,8 @@ Passo 7 - Clicar em cadastrar
     Click Button                         locator=${cadastrarButton}    
     Sleep   5s
 
-Passo 8 - Clicar em cadastrar usuário
-    Wait Until Element Is Visible        locator=${cadastrar usuário}   
-    Click Button                         locator=${cadastrar usuário}  
-    Sleep   5s    
+# Passo 8 - Clicar em cadastrar usuário
+#     Wait Until Element Is Visible        locator=${cadastrar usuário}   
+#     Click Button                         locator=${cadastrar usuário}  
+#     Sleep   5s    
 

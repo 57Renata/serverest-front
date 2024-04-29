@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-29T15:56:02.011299" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Academy\AutomaçãoFrontEndRobotFramework\tests">
+<suite id="s1-s1" name="Testes Serverest" source="C:\Academy\AutomaçãoFrontEndRobotFramework\tests\testes_serverest.robot">
+<test id="s1-s1-t1" name="Cenário de teste: Cadastro de usuário administrador" line="7">
+<kw name=" Abrir o navegador" owner="testes_recursos_serverest" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-29T15:56:03.302433" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-04-29T15:56:06.422792" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Users\WIN10\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.63); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-29T15:56:03.302433" elapsed="6.562568"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-29T15:56:09.866002" elapsed="0.201951"/>
+</kw>
+<status status="PASS" start="2024-04-29T15:56:03.299437" elapsed="6.768516"/>
+</kw>
+<kw name="Passo 1 - acessar a página de login ServeRst" owner="testes_recursos_serverest">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-04-29T15:56:10.072461" level="INFO">Opening url 'https://front.serverest.dev/login'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-04-29T15:56:10.071462" elapsed="2.231004"/>
+</kw>
+<status status="PASS" start="2024-04-29T15:56:10.070463" elapsed="2.233001"/>
+</kw>
+<kw name="Passo 2 - Clicar em cadastre-se" owner="testes_recursos_serverest">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${cadastreseLink}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-29T15:56:12.305461" elapsed="0.597884"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-29T15:56:12.904345" level="INFO">Clicking element '//a[@data-testid='cadastrar'][contains(.,'Cadastre-se')]'.</msg>
+<arg>locator=${cadastreseLink}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-29T15:56:12.903345" elapsed="0.406750"/>
+</kw>
+<status status="PASS" start="2024-04-29T15:56:12.304462" elapsed="1.005633"/>
+</kw>
+<kw name="Passo 3 - Digitar um nome" owner="testes_recursos_serverest">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${nomeInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-29T15:56:13.348074" elapsed="0.090942"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-29T15:56:13.440015" level="INFO">Typing text 'Testenildos das Silva' into text field '//input[contains(@name,'nome')]'.</msg>
+<arg>locator=${nomeInput}</arg>
+<arg>text=Testenildos das Silva</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-29T15:56:13.439016" elapsed="0.305811"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-29T15:56:16.747755" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-29T15:56:13.745825" elapsed="3.001930"/>
+</kw>
+<status status="PASS" start="2024-04-29T15:56:13.347077" elapsed="3.400678"/>
+</kw>
+<kw name="Passo 4 - Digitar e-mail" owner="testes_recursos_serverest">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${emailInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-29T15:56:16.749753" elapsed="0.112928"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-29T15:56:16.864679" level="INFO">Typing text 'testerenildodasilva01@qa.coders.com.br' into text field '//input[contains(@name,'email')]'.</msg>
+<arg>locator=${emailInput}</arg>
+<arg>text=testerenildodasilva01@qa.coders.com.br</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-29T15:56:16.863681" elapsed="0.340025"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-29T15:56:20.204986" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-29T15:56:17.203706" elapsed="3.001280"/>
+</kw>
+<status status="PASS" start="2024-04-29T15:56:16.748755" elapsed="3.456231"/>
+</kw>
+<kw name="Passo 5 - Digitar uma senha" owner="testes_recursos_serverest">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${senhadInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-29T15:56:20.205987" elapsed="0.045972"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-04-29T15:56:20.252960" level="INFO">Typing password into text field '//input[contains(@name,'password')]'.</msg>
+<msg time="2024-04-29T15:56:20.325912" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>locator=${senhadInput}</arg>
+<arg>password=TestesrnildoQaCoders@10</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-29T15:56:20.252960" elapsed="0.255841"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-29T15:56:23.510673" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-29T15:56:20.508801" elapsed="3.001872"/>
+</kw>
+<status status="PASS" start="2024-04-29T15:56:20.205987" elapsed="3.304686"/>
+</kw>
+<kw name="Passo 6 - Escolher perfil de usuário de administrador" owner="testes_recursos_serverest">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${administradorCheckbox}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-29T15:56:23.514671" elapsed="0.241972"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-29T15:56:23.758643" level="INFO">Selecting checkbox '//input[contains(@name,'administrador')]'.</msg>
+<arg>locator=${administradorCheckbox}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-29T15:56:23.757643" elapsed="0.209996"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-29T15:56:26.968989" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-29T15:56:23.968640" elapsed="3.000349"/>
+</kw>
+<status status="PASS" start="2024-04-29T15:56:23.513672" elapsed="3.455317"/>
+</kw>
+<kw name="Passo 7 - Clicar em cadastrar" owner="testes_recursos_serverest">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${cadastrarButton}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-29T15:56:26.972985" elapsed="0.046970"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-29T15:56:27.020954" level="INFO">Clicking button '//button[@data-testid='cadastrar'][contains(.,'Cadastrar')]'.</msg>
+<arg>locator=${cadastrarButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-29T15:56:27.020954" elapsed="0.145912"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-29T15:56:32.168255" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-29T15:56:27.167864" elapsed="5.000391"/>
+</kw>
+<status status="PASS" start="2024-04-29T15:56:26.971990" elapsed="5.196265"/>
+</kw>
+<kw name="Passo 8 - Clicar em cadastrar usuário" owner="testes_recursos_serverest">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${cadastrar usuário}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-29T15:56:32.174252" elapsed="0.073466"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-29T15:56:32.248719" level="INFO">Clicking button '//a[@data-testid='cadastrarUsuarios'][contains(.,'Cadastrar')]'.</msg>
+<msg time="2024-04-29T15:56:32.635539" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-29T15:56:32.636537" level="FAIL">Button with locator '//a[@data-testid='cadastrarUsuarios'][contains(.,'Cadastrar')]' not found.</msg>
+<arg>locator=${cadastrar usuário}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-29T15:56:32.248719" elapsed="0.533727">Button with locator '//a[@data-testid='cadastrarUsuarios'][contains(.,'Cadastrar')]' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-04-29T15:56:32.782446" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-29T15:56:32.173252" elapsed="0.609194">Button with locator '//a[@data-testid='cadastrarUsuarios'][contains(.,'Cadastrar')]' not found.</status>
+</kw>
+<kw name="Fechar o navegador" owner="testes_recursos_serverest" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-04-29T15:56:32.784446" elapsed="3.964441"/>
+</kw>
+<status status="PASS" start="2024-04-29T15:56:32.784446" elapsed="3.964441"/>
+</kw>
+<status status="FAIL" start="2024-04-29T15:56:03.225481" elapsed="33.525405">Button with locator '//a[@data-testid='cadastrarUsuarios'][contains(.,'Cadastrar')]' not found.</status>
+</test>
+<status status="FAIL" start="2024-04-29T15:56:02.139219" elapsed="34.614665"/>
+</suite>
+<status status="FAIL" start="2024-04-29T15:56:02.015296" elapsed="34.740586"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Testes Serverest">Tests.Testes Serverest</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-04-29T15:56:06.422792" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Users\WIN10\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.63); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
