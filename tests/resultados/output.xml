@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-08T09:50:26.062317" rpa="false" schemaversion="5">
+<suite id="s1" name="Testes Serverest" source="C:\Academy\AutomaçãoFrontEndRobotFramework\tests\testes_serverest.robot">
+<test id="s1-t1" name="Cenário de teste: Cadastro de usuário administrador" line="7">
+<kw name=" Abrir o navegador" owner="testes_recursos_serverest" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-08T09:50:26.455038" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-08T09:50:26.455038" elapsed="2.572197"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-08T09:50:29.028230" elapsed="0.137901"/>
+</kw>
+<status status="PASS" start="2024-04-08T09:50:26.454038" elapsed="2.713095"/>
+</kw>
+<kw name="Passo 1 - acessar a página de login ServeRst" owner="testes_recursos_serverest">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-04-08T09:50:29.169129" level="INFO">Opening url 'https://front.serverest.dev/login'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-04-08T09:50:29.169129" elapsed="1.871670"/>
+</kw>
+<status status="PASS" start="2024-04-08T09:50:29.168130" elapsed="1.873668"/>
+</kw>
+<kw name="Passo 2 - Clicar em cadastre-se" owner="testes_recursos_serverest">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${cadastreseLink}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-08T09:50:31.042797" elapsed="0.052964"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-08T09:50:31.096762" level="INFO">Clicking element '//a[@data-testid='cadastrar'][contains(.,'Cadastre-se')]'.</msg>
+<arg>locator=${cadastreseLink}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T09:50:31.095761" elapsed="0.360742"/>
+</kw>
+<status status="PASS" start="2024-04-08T09:50:31.041798" elapsed="0.414705"/>
+</kw>
+<kw name="Fechar o navegador" owner="testes_recursos_serverest" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-04-08T09:50:31.457501" elapsed="2.318355"/>
+</kw>
+<status status="PASS" start="2024-04-08T09:50:31.457501" elapsed="2.318355"/>
+</kw>
+<status status="PASS" start="2024-04-08T09:50:26.453037" elapsed="7.323821"/>
+</test>
+<status status="PASS" start="2024-04-08T09:50:26.066312" elapsed="7.711544"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testes Serverest">Testes Serverest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

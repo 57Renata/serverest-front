@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-18T14:28:32.408232" rpa="false" schemaversion="5">
+<suite id="s1" name="Testes Serverest" source="c:\Academy\AutomaçãoFrontEndRobotFramework\tests\testes_serverest.robot">
+<test id="s1-t1" name="Cenário de teste: Cadastro de usuário administrador" line="7">
+<kw name=" Abrir o navegador" owner="testes_recursos_serverest" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-18T14:28:33.028461" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-18T14:28:33.027462" elapsed="3.422328"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-18T14:28:36.450790" elapsed="0.143909"/>
+</kw>
+<status status="PASS" start="2024-04-18T14:28:33.025460" elapsed="3.570239"/>
+</kw>
+<kw name="Passo 1 - acessar a página de login ServeRst" owner="testes_recursos_serverest">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-04-18T14:28:36.598697" level="INFO">Opening url 'https://front.serverest.dev/login'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-04-18T14:28:36.597698" elapsed="0.891197"/>
+</kw>
+<status status="PASS" start="2024-04-18T14:28:36.596698" elapsed="0.893197"/>
+</kw>
+<kw name="Passo 2 - Clicar em cadastre-se" owner="testes_recursos_serverest">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${cadastreseLink}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-18T14:28:37.497889" elapsed="3.909552"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-18T14:28:41.411440" level="INFO">Clicking element '//a[@data-testid='cadastrar'][contains(.,'Cadastre-se')]'.</msg>
+<arg>locator=${cadastreseLink}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T14:28:41.409442" elapsed="0.157021"/>
+</kw>
+<status status="PASS" start="2024-04-18T14:28:37.495892" elapsed="4.071570"/>
+</kw>
+<kw name="Passo 3 - Digitar um nome" owner="testes_recursos_serverest">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${nomeInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-18T14:28:41.570461" elapsed="0.041665"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-18T14:28:41.613131" level="INFO">Typing text 'Testenildos das Silva' into text field '//input[contains(@name,'nome')]'.</msg>
+<arg>locator=${nomeInput}</arg>
+<arg>text=Testenildos das Silva</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T14:28:41.612126" elapsed="0.214699"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-18T14:28:44.828026" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-18T14:28:41.827824" elapsed="3.001222"/>
+</kw>
+<status status="PASS" start="2024-04-18T14:28:41.568461" elapsed="3.260585"/>
+</kw>
+<kw name="Passo 4 - Digitar e-mail" owner="testes_recursos_serverest">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${emailInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-18T14:28:44.833032" elapsed="0.058160"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-18T14:28:44.893188" level="INFO">Typing text 'testerenildodasilva01@qa.coders.com.br' into text field '//input[contains(@name,'email')]'.</msg>
+<arg>locator=${emailInput}</arg>
+<arg>text=testerenildodasilva01@qa.coders.com.br</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T14:28:44.892189" elapsed="0.253628"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-18T14:28:48.147580" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-18T14:28:45.145817" elapsed="3.002762"/>
+</kw>
+<status status="PASS" start="2024-04-18T14:28:44.831032" elapsed="3.318551"/>
+</kw>
+<kw name="Passo 5 - Digitar uma senha" owner="testes_recursos_serverest">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${senhadInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-18T14:28:48.159574" elapsed="0.066958"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-04-18T14:28:48.227529" level="INFO">Typing password into text field '//input[contains(@name,'password')]'.</msg>
+<msg time="2024-04-18T14:28:48.303996" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>locator=${senhadInput}</arg>
+<arg>password=TestesrnildoQaCoders@10</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T14:28:48.227529" elapsed="0.237366"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-18T14:28:51.466925" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-18T14:28:48.465894" elapsed="3.002022"/>
+</kw>
+<status status="PASS" start="2024-04-18T14:28:48.154578" elapsed="3.313338"/>
+</kw>
+<kw name="Passo 6 - Escolher perfil de usuário de administrador" owner="testes_recursos_serverest">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${administradorCheckbox}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-18T14:28:51.471913" elapsed="0.052272"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-18T14:28:51.525184" level="INFO">Selecting checkbox '//input[contains(@name,'administrador')]'.</msg>
+<arg>locator=${administradorCheckbox}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T14:28:51.524185" elapsed="0.107091"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-18T14:28:54.632453" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-18T14:28:51.632278" elapsed="3.001196"/>
+</kw>
+<status status="PASS" start="2024-04-18T14:28:51.469915" elapsed="3.163559"/>
+</kw>
+<kw name="Passo 7 - Clicar em cadastrar" owner="testes_recursos_serverest">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${cadastrarButton}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-18T14:28:54.638458" elapsed="0.084947"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T14:28:54.726408" level="INFO">Clicking button '//button[@data-testid='cadastrar'][contains(.,'Cadastrar')]'.</msg>
+<arg>locator=${cadastrarButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T14:28:54.724405" elapsed="0.203945"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-18T14:28:59.930715" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-18T14:28:54.929349" elapsed="5.001366"/>
+</kw>
+<status status="PASS" start="2024-04-18T14:28:54.636460" elapsed="5.295259"/>
+</kw>
+<kw name="Passo 8 - Clicar em cadastrar usuário" owner="testes_recursos_serverest">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${cadastrar usuário}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-18T14:28:59.934716" elapsed="0.057962"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T14:28:59.993680" level="INFO">Clicking button '//a[@data-testid='cadastrarUsuarios'][contains(.,'Cadastrar')]'.</msg>
+<msg time="2024-04-18T14:29:00.401912" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-18T14:29:00.402897" level="FAIL">Button with locator '//a[@data-testid='cadastrarUsuarios'][contains(.,'Cadastrar')]' not found.</msg>
+<arg>locator=${cadastrar usuário}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-18T14:28:59.993680" elapsed="0.546409">Button with locator '//a[@data-testid='cadastrarUsuarios'][contains(.,'Cadastrar')]' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-04-18T14:29:00.541088" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-18T14:28:59.932716" elapsed="0.608372">Button with locator '//a[@data-testid='cadastrarUsuarios'][contains(.,'Cadastrar')]' not found.</status>
+</kw>
+<kw name="Fechar o navegador" owner="testes_recursos_serverest" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-04-18T14:29:00.545087" elapsed="2.302947"/>
+</kw>
+<status status="PASS" start="2024-04-18T14:29:00.543090" elapsed="2.305954"/>
+</kw>
+<status status="FAIL" start="2024-04-18T14:28:33.023458" elapsed="29.826583">Button with locator '//a[@data-testid='cadastrarUsuarios'][contains(.,'Cadastrar')]' not found.</status>
+</test>
+<status status="FAIL" start="2024-04-18T14:28:32.422109" elapsed="30.434928"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Testes Serverest">Testes Serverest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
